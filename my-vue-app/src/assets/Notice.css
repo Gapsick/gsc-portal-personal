@@ -1,0 +1,37 @@
+.notice-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .notice-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .notice-table th {
+    background: #4A90E2;
+    color: white;
+    padding: 12px;
+    text-align: center;
+  }
+  
+  .notice-table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .notice-table tr:hover {
+    background: #e6f0ff;
+  }
+  

@@ -1,0 +1,165 @@
+/* 글로벌 스타일 파일 (global.css) */
+:root {
+    --primary-color: #4A90E2; /* 연한 파란색 */
+    --secondary-color: #ffffff;
+    --background-color: #f4f4f4;
+    --text-color: #333;
+    --button-hover-color: #3a7bd5;
+    --border-color: #ccc;
+    --table-header-bg: #e6f0ff;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 페이지 중앙 정렬 */
+  }
+  
+  /* 네비게이션 바 스타일 */
+  .navbar {
+    width: 100%;
+    background: var(--primary-color);
+    color: white;
+    padding: 12px 0;
+    display: flex;
+    justify-content: center; /* 중앙 정렬 */
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  
+  .navbar-container {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .nav-auth {
+    display: flex;
+    gap: 10px;
+  }
+  
+  /* 메인 컨텐츠 중앙 정렬 */
+  .container {
+    max-width: 1000px;
+    margin-top: 80px; /* 네비게이션 바 아래 위치 */
+    padding: 24px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* 버튼 스타일 */
+  button {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    padding: 10px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    min-width: 120px;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  button:hover {
+    background-color: var(--button-hover-color);
+    transform: scale(1.05);
+  }
+  
+  /* 공지사항 테이블 중앙 정렬 */
+  .notice-container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 24px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .notice-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .notice-table th, .notice-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .notice-table th {
+    background: var(--table-header-bg);
+    font-weight: bold;
+  }
+  
+  .notice-table tr:nth-child(even) {
+    background: #f9f9f9;
+  }
+  
+  .notice-table tr:hover {
+    background: #e6f0ff;
+  }
+  
+  /* 일정 관리 스타일 */
+  .schedule-container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 24px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* 관리자 페이지 중앙 정렬 */
+  .admin-container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 24px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* 에러 메시지 */
+  .error-message {
+    color: red;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
